@@ -1,0 +1,245 @@
+*{margin: 0;padding: 0;}
+.responsiveClass {
+  display: block;
+  min-width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(#9888a5, #d0c7cc);
+  background-repeat: no-repeat;
+  // background-image: linear-gradient(rgba(187, 40, 231, 0.89),rgba(0, 0, 0, 0.8)), url("./imgs/oriental.png");
+}
+
+/***********************************/
+/************* HEADER **************/
+/***********************************/
+
+header {
+  background-color: #a799b7;
+  height: 160px;
+}
+
+header a {
+  color: #000000;
+  font-size: 18px;
+}
+
+header a:hover {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 22px;
+  transition-duration: 0.5s;
+}
+
+header nav div {
+  list-style: none;
+  margin: 10px 0 0 10px;
+}
+
+nav {
+  height: 20vh;
+  transition: height 0.5s ease;
+}
+
+.bann {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.banniere {
+  font-family: "Parisienne";
+  font-size: 80px;
+  margin: 0 auto;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.6);
+}
+
+.bouton {
+  float: right;
+  cursor: pointer;
+}
+
+/***********************************/
+/************* CONTENT *************/
+/***********************************/
+
+// section {
+//   min-height: 70vh;
+// }
+main {
+  background-color: #776472;
+}
+
+.bienvenue {
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Palatino Linotype", Palatino, "Century Schoolbook L",
+    "Times New Roman", "serif";
+}
+.voici {
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .slide{height: 100% !important;}
+
+}
+
+.selected{
+}
+
+
+/***********************************/
+/************* FOOTER **************/
+/***********************************/
+
+footer {
+  background-color: #a799b7;
+}
+.contact {
+  padding-top: 12px;
+}
+.contactLien {
+  text-decoration: none;
+}
+
+/***********************************/
+/*********** RESPONSIVE ************/
+/***********************************/
+@media all and (max-width: 350px) {
+  footer {
+    min-height: 100vh;
+  }
+  .bann {
+    padding: 12px 3px 0px 0px;
+  }
+  .banniere {
+    font-weight: bolder;
+  }
+  main {
+    padding: 0px;
+  }
+}
+/************** XS *****************/
+@media all and (max-width: 575.98px) {
+  header {
+    height: auto;
+  }
+  header nav {
+    display: none;
+  }
+  .banniere {
+    font-size: 9vw;
+  }
+  .menu {
+  }
+  .bienvenue {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  // main {
+  //   min-height: 100vh;
+  // }
+  p.infos {
+    font-size: 13px;
+  }
+  footer {
+    text-align: center;
+    padding-top: 25px;
+  }
+  .menuResponsive {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+/************** SM ******************/
+@media all and (min-width: 576px) and (max-width: 767.98px) {
+  header {
+    height: auto;
+  }
+  header nav {
+    display: none;
+  }
+  .banniere {
+    font-size: 50px;
+  }
+  .menuResponsive {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer {
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+
+/************** MD ******************/
+@media all and (min-width: 768px) and (max-width: 991.98px) {
+  header {
+    height: auto;
+  }
+  header nav {
+    display: none;
+  }
+  .menuResponsive {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .infos {
+    margin-bottom: 30px;
+  }
+}
+
+/************** LG ******************/
+@media all and (min-width: 992px) and (max-width: 1199.98px) {
+  .bouton {
+    display: none;
+  }
+}
+
+/************** XL *****************/
+@media all and (min-width: 1200px) {
+  .bouton {
+    display: none;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .voici {
+    text-align: center;
+  }
+
+  // .carousel {
+  //   min-width: 95%;
+  // }
+}
+
+@media all and (max-width: 991px) {
+  footer {
+    padding-top: 20px;
+  }
+
+  .infos {
+    padding-bottom: 40px;
+  }
+}
+
+@media all and (max-width: 1199px) {
+  .quisuisje {
+    font-size: 24px;
+  }
+}

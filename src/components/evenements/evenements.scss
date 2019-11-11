@@ -1,0 +1,18 @@
+.event{margin-top:35px;}
+
+.menuCenter{
+  text-align:center;
+  text-decoration: underline;
+}
+
+h4{text-align: center;}
+
+.event li{
+  margin-bottom:5px;
+}
+.event ul{
+  list-style: none;
+}
+@media all and (max-width: 350px){
+  ul{padding: 0px;}
+}
